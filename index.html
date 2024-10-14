@@ -1,0 +1,253 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bulma css template -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- model viewer -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  <title>
+    SKDream
+  </title>
+  <link rel="icon" href="icon.ico">
+</head>
+<body>
+  <section class="section">
+
+  <div class="container has-text-centered">
+    <!-- paper title -->
+    <!-- <style>
+        .styled-title {
+            font-family: Georgia, serif;
+            text-transform: uppercase; /* 将所有单词转为大写 */
+            font-size: 33px; /* 基础字体大小 */
+        }
+    
+        .styled-title .first-letter {
+            font-size: 40px; /* 每个单词第一个字母大一号 */
+        }
+    </style>
+    <title>Custom Title</title>
+    <h1 class="styled-title">
+        <span class="first-letter">SKD</span>ream: <span class="first-letter">C</span>ontrollable <span class="first-letter"></span>M</span>ulti-view and 3D 
+        <span class="first-letter">G</span>eneration with <span class="first-letter">A</span>rbitrary <span class="first-letter">S</span>keletons
+    </h1> -->
+    <p class="title is-3"> 🦴SKDream: Controllable Multi-view and 3D Generation with Arbitrary Skeletons </p>
+    
+    <!-- publication -->
+    <!-- authors -->
+    <p class="title is-5 mt-2">
+        📄Anonymous Submission
+    </p>
+  <br>
+  <img class="summary-img" src="figs/open.jpg" style="width:70%;">
+  <!-- main container -->
+  <div class="container is-max-desktop has-text-centered">
+    
+    <!-- abstract -->
+    <p class="title is-3 mt-5 has-text-centered"> Overview </p>
+    <p class="content is-size-6 has-text-left">
+        - Skeletons can effectively represent and describe object anatomy and pose. Unfortunately, past studies are often limited to human skeletons. In this work, <b>we generalize skeletal conditioned generation to arbitrary structures.</b>
+        <br>
+        - First, we design a reliable mesh skeletonization pipeline to generate a <b>large-scale mesh-skeleton paired dataset.</b>
+        Based on the dataset, <b>a multi-view and 3D generation pipeline</b> is built. Our method achieves instant generation of multi-view and 3D contents which are aligned with given skeletons.
+    </p>
+    <img class="summary-img" src="figs/method.jpg" style="width:90%;">
+    <br>
+    
+    <!-- results (videos) -->
+    <p class="title is-3 mt-5 has-text-centered"> Generated Results</p>
+    <p class="content has-text-centered is-size-5">
+      Our work achieves <b>conditional genenration with arbitrary skeletal structures</b>. Multi-view images are first generated, and 3D meshes are reconstructed and refined. The generated contents are aligned with the given skeletons.
+    </p>
+    <table class="table">
+      <colgroup>
+        <col span="1" style="width: 33%;">
+        <col span="1" style="width: 33%;">
+        <col span="1" style="width: 33%;">
+      </colgroup>
+      <tbody>
+        <tr> 
+          <th> <video muted controls autoplay loop> <source src="animations/2d9acde21348479aa461053dc16acf24_0.mp4" type="video/mp4"> </video> </th>
+          <th> <video muted controls autoplay loop> <source src="animations/63a4f315daa5466fa6765b3feb70b3c9_0.mp4" type="video/mp4"> </video> </th>
+          <th> <video muted controls autoplay loop> <source src="animations/05efd966a8cf49e7ae1bfbc8f556ed46_0.mp4" type="video/mp4"> </video> </th>
+        </tr>
+        <tr>
+          <th class="has-text-centered"> A creature with a pig head and a fish body. </th>
+          <th class="has-text-centered"> A carp, elongated body, large golden scales. </th>
+          <th class="has-text-centered"> A rattle snake. </th>
+        </tr>
+    </table>
+
+    <table class="table">
+      <colgroup>
+        <col span="1" style="width: 33%;">
+        <col span="1" style="width: 33%;">
+        <col span="1" style="width: 33%;">
+      </colgroup>
+      <tbody>
+        <tr> 
+          <th> <video muted controls autoplay loop> <source src="animations/88a900374cc94bdeb14400195a50c00c_2.mp4" type="video/mp4"> </video> </th>
+          <th> <video muted controls autoplay loop> <source src="animations/2a86690efb86401ca701b5c854c1f85d_1.mp4" type="video/mp4"> </video> </th>
+          <th> <video muted controls autoplay loop> <source src="animations/1167b912622246a8bed6326110cd5473_2.mp4" type="video/mp4"> </video> </th>
+        </tr>
+        <tr>
+          <th class="has-text-centered"> An alien, with a large head, big eyes. </th>
+          <th class="has-text-centered"> Cartoon character in Fall Guys. </th>
+          <th class="has-text-centered"> A robot. </th>
+        </tr>
+    </table>
+
+    <table class="table">
+      <colgroup>
+        <col span="1" style="width: 33%;">
+        <col span="1" style="width: 33%;">
+        <col span="1" style="width: 33%;">
+      </colgroup>
+      <tbody>
+        <tr> 
+          <th> <video muted controls autoplay loop> <source src="animations/695103af832e47f2809f3888373bb0e9_0.mp4" type="video/mp4"> </video> </th>
+          <th> <video muted controls autoplay loop> <source src="animations/64212f86eeb544c3be69a7b5cdd2a308_0.mp4" type="video/mp4"> </video> </th>
+          <th> <video muted controls autoplay loop> <source src="animations/256961bd46f44619a20dff9cb78681c5_1.mp4" type="video/mp4"> </video> </th>
+        </tr>
+        <tr>
+          <th class="has-text-centered"> A duck. </th>
+          <th class="has-text-centered"> A plesiosaur with a long neck. </th>
+          <th class="has-text-centered"> A swan with feathers, long neck.  </th>
+        </tr>
+    </table>
+
+    <table class="table">
+      <colgroup>
+        <col span="1" style="width: 33%;">
+        <col span="1" style="width: 33%;">
+        <col span="1" style="width: 33%;">
+      </colgroup>
+      <tbody>
+        <tr> 
+          <th> <video muted controls autoplay loop> <source src="animations/222a64990c7347778377f8a065e342b7_2.mp4" type="video/mp4"> </video> </th>
+          <th> <video muted controls autoplay loop> <source src="animations/fbd238669a074875bd1709cf60de25e9_0.mp4" type="video/mp4"> </video> </th>
+          <th> <video muted controls autoplay loop> <source src="animations/04726f12ea17446e900d016bd2674155_0.mp4" type="video/mp4"> </video> </th>
+        </tr>
+        <tr>
+          <th class="has-text-centered"> A seagull, white feathers with gray on the back and wings. </th>
+          <th class="has-text-centered"> A small bat with leathery wings, pointed ears, dark fur. </th>
+          <th class="has-text-centered"> A penguin, black back, white belly, flipper-like wings. </th>
+        </tr>
+    </table>
+
+      <table class="table">
+        <colgroup>
+          <col span="1" style="width: 33%;">
+          <col span="1" style="width: 33%;">
+          <col span="1" style="width: 33%;">
+        </colgroup>
+        <tbody>
+          <tr> 
+            <th> <video muted controls autoplay loop> <source src="animations/6ce0b9f94f00433c92f21f3d8f844332_2.mp4" type="video/mp4"> </video> </th>
+            <th> <video muted controls autoplay loop> <source src="animations/24bae7f3e42642ceb3f08a78085d1288_2.mp4" type="video/mp4"> </video> </th>
+            <th> <video muted controls autoplay loop> <source src="animations/50cf455eff9047aab0900846f54afd29_2.mp4" type="video/mp4"> </video> </th>
+          </tr>
+          <tr>
+            <th class="has-text-centered"> A polar bear, large body, black nose. </th>
+            <th class="has-text-centered"> A wolf, thick grey fur, pointed ears, bushy tail. </th>
+            <th class="has-text-centered"> A bull, muscular body, short black fur, curved horns. </th>
+          </tr>
+      </table>
+
+      <table class="table">
+        <colgroup>
+          <col span="1" style="width: 33%;">
+          <col span="1" style="width: 33%;">
+          <col span="1" style="width: 33%;">
+        </colgroup>
+        <tbody>
+          <tr> 
+            <th> <video muted controls autoplay loop> <source src="animations/377bfffb7a4d4f38be67f143dcb4cb0a_2.mp4" type="video/mp4"> </video> </th>
+            <th> <video muted controls autoplay loop> <source src="animations/c9cf84cbc8e34cf4876b86774cf731e8_1.mp4" type="video/mp4"> </video> </th>
+            <th> <video muted controls autoplay loop> <source src="animations/e9d91748653145b5a3bc4e655e1c0850_0.mp4" type="video/mp4"> </video> </th>
+          </tr>
+          <tr>
+            <th class="has-text-centered"> A Golden Retriever, friendly expression, floppy ears.</th>
+            <th class="has-text-centered"> A donkey, grey fur, long ears. </th>
+            <th class="has-text-centered"> A sea turtle, broad oval shell, smooth olive-green scales. </th>
+          </tr>
+      </table>
+
+      <table class="table">
+        <colgroup>
+          <col span="1" style="width: 33%;">
+          <col span="1" style="width: 33%;">
+          <col span="1" style="width: 33%;">
+        </colgroup>
+        <tbody>
+          <tr> 
+            <th> <video muted controls autoplay loop> <source src="animations/693a376d9a7f4a2c805a7fd315704ce2_0.mp4" type="video/mp4"> </video> </th>
+            <th> <video muted controls autoplay loop> <source src="animations/ca45733b8c354686a3d1e34fa4ab292c_2.mp4" type="video/mp4"> </video> </th>
+            <th> <video muted controls autoplay loop> <source src="animations/4e18d3bad0c84603aca3f44aaac2a82b_3.mp4" type="video/mp4"> </video> </th>
+          </tr>
+          <tr>
+            <th class="has-text-centered"> A scorpion, segmented body, curved tail with stinger, two large pincers. </th>
+            <th class="has-text-centered"> A black and red spider. </th>
+            <th class="has-text-centered"> A lizard, elongated body, scaly skin. </th>
+          </tr>
+      </table>
+    
+      <table class="table">
+        <colgroup>
+          <col span="1" style="width: 33%;">
+          <col span="1" style="width: 33%;">
+          <col span="1" style="width: 33%;">
+        </colgroup>
+        <tbody>
+          <tr> 
+            <th> <video muted controls autoplay loop> <source src="animations/0d94fa80e87e49e2b0747d1252b9e3bd_0.mp4" type="video/mp4"> </video> </th>
+            <th> <video muted controls autoplay loop> <source src="animations/ad75db58914d4f9da6a2952fb7bd6ba9_0.mp4" type="video/mp4"> </video> </th>
+            <th> <video muted controls autoplay loop> <source src="animations/64854a2acb1d4808943d6663f1cdc06b_0.mp4" type="video/mp4"> </video> </th>
+          </tr>
+          <tr>
+            <th class="has-text-centered"> A potted plant. </th>
+            <th class="has-text-centered"> A green cactus, with multiple arms. </th>
+            <th class="has-text-centered"> A tree stump, roots and trunk. </th>
+          </tr>
+      </table>
+    
+      
+    <br>
+
+    <!-- citation -->
+  </div>
+
+
+  </section>
+</body>
+<script>
+  var videos = document.getElementsByClassName("clickplay");
+  for (var i = 0; i < videos.length; i++) {
+    videos[i].addEventListener("click", function() {
+      this.play();
+    });
+    videos[i].addEventListener("ended", function() {
+      this.pause();
+      this.currentTime = 0;
+    });
+  }
+  
+  document.querySelectorAll('.info-container').forEach(function(container) {
+    container.addEventListener('mouseover', function() {
+      var infoText = container.querySelector('.info-text');
+      infoText.style.display = 'block';
+    });
+  
+    container.addEventListener('mouseout', function() {
+      var infoText = container.querySelector('.info-text');
+      infoText.style.display = 'none';
+    });
+  });
+</script>
+</html>
